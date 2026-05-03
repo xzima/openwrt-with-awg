@@ -92,4 +92,4 @@ jobs:
                 replacesArtifacts: true
                 prerelease: false
                 token: "${{ secrets.GITHUB_TOKEN }}"
-                artifacts: openwrt/bin/targets/rockchip/armv8/*
+                artifacts: openwrt-with-awg/bin/targets/rockchip/armv8/*
