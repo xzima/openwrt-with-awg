@@ -1,6 +1,9 @@
 name: Build rockchip 6.12 firmware
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
     build:
         name: Build rockchip linux v6.12 images
