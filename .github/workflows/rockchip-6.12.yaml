@@ -21,7 +21,7 @@ jobs:
             - name: Build
               run: |
                 git clone https://github.com/xzima/openwrt-with-awg.git
-                cd openwrt
+                cd openwrt-with-awg
                 git pull
                 git checkout linux-6.6
                 ./scripts/feeds update -a
