@@ -817,7 +817,7 @@ CONFIG_shadow-all=y
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_radxa_zero-3w is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus is not set
 # CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_xunlong_orangepi-r1-plus-lts is not set
-CONFIG_PACKAGE_kmod-amneziawg=m
+CONFIG_PACKAGE_kmod-amneziawg=y
 CONFIG_PACKAGE_amneziawg-tools=y
 CONFIG_PACKAGE_luci-proto-amneziawg=y
 CONFIG_PACKAGE_luci-i18n-amneziawg-ru=y
