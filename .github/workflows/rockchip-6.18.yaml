@@ -1,6 +1,9 @@
 name: Build rockchip 6.18 firmware
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
     build:
         name: Build rockchip linux v6.18 images
@@ -30,8 +33,8 @@ jobs:
 
             - name: Build
               run: |
-                git clone https://github.com/mj22226/openwrt.git
-                cd openwrt
+                git clone https://github.com/xzima/openwrt-with-awg.git
+                cd openwrt-with-awg
                 git pull
                 git checkout linux-6.6
                 ./scripts/feeds update -a
@@ -102,4 +105,4 @@ jobs:
                 replacesArtifacts: true
                 prerelease: false
                 token: "${{ secrets.GITHUB_TOKEN }}"
-                artifacts: openwrt/bin/targets/rockchip/armv8/*
+                artifacts: openwrt-with-awg/bin/targets/rockchip/armv8/*
